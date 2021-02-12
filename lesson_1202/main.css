@@ -1,0 +1,22 @@
+body {
+    background-image: url('img/1018.png');
+    /* путь к фону */
+    background-repeat: repeat;
+    /* фон будет повторяться */
+    /* background-size: cover;
+    он накроет всю страницу */
+}
+
+p {
+    font-size: 20px;
+}
+
+.avatar {
+     width: 100px;
+     float: left;
+}
+
+.headings {
+    font-size: 20px;
+    color: #8a8a8a;
+}
