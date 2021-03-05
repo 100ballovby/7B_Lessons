@@ -1,0 +1,35 @@
+#container {
+    background: #8a8a8a;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    /* направление по осям
+     flex-direction:
+     row, row-reverse,
+     column, column-reverse
+     */
+    padding: 1em;
+    justify-content: space-around;
+    /*
+    justify_content: flex-start, flex-end, center,
+    space-around, space-between
+     */
+    align-items: stretch;
+
+}
+
+div {
+    display: block;
+    width: 100px;
+
+    padding: 1em;
+    margin: 1em;
+}
+
+.red {background: red}
+.yellow {background: yellow}
+.green {background: green}
+.blue {
+    background: blue;
+    width: 150px;
+}
