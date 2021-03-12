@@ -1,0 +1,13 @@
+.jumbotron {
+    height: 30vh;
+    background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2020/04/w-qjCHPZbeXCQ-unsplash.jpg");
+
+}
+
+.container {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1em auto;
+}
