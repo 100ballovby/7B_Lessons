@@ -24,11 +24,19 @@
 }
 
 .btn {
+    min-width: 100px;
     margin: 1em;
     padding: 0.5em;
     border: 2px solid black;
     border-radius: 1.25em;
     background: transparent;
+    cursor: pointer;
+    transition: background 1.5s, color 1.5s;
+}
+
+.btn-header:hover {
+    background: transparent;
+    color: magenta;
 }
 
 .btn-header {
