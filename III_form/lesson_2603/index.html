@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -18,11 +19,11 @@
         <!--<input type="radio">   переключатель (для выбора одного из множества) -->
         <!--<input type="submit">  кнопка для отправки чего-то -->
         <label for="username">Имя пользователя:</label><br>
-        <input type="text" name="username" id="username" placeholder="username"><br>
+        <input type="text" name="username" id="username" placeholder="username" required><br>
 
         <label for="password">Пароль:</label><br>
-        <input type="password" name="password" id="password" placeholder="password">
-    </fieldset>
+        <input type="password" name="password" id="password" placeholder="password" required><br>
+
     <h4>Выберите пол:</h4>
     <div>
         <!-- RADIO buttons -->
@@ -34,9 +35,32 @@
             <input type="radio" name="gender" value="other" id="3">Другой</label>
     </div>
 
-    <input type="submit" value="Отправить">
+    <div>
+        <label for="seats">Количество мест: </label>
+        <select name="seats" id="seats">
+            <option value="1">1️⃣</option>
+            <option value="2">2️⃣</option>
+            <option value="3">3️⃣</option>
+            <option value="4">4️⃣</option>
+        </select>
+    </div>
 
+    <div>
+        <label for="date">Выберите дату посещения:</label>
+        <input type="date" name="date_of" id="date">
 
+        <label for="time">Выберите время:</label>
+        <input type="time" name="time_of" id="time">
+    </div>
+
+    <div>
+        <label for="bonuses">Выберите количество бонусов: </label>
+        <input type="range" id="bonuses" name="bonuses" min="1" max="100" step="0.01">
+    </div>
+
+    </fieldset>
+    <input type="submit" value="Отправить" class="btn">
+    <input type="reset" value="Сбросить" class="btn">
 </form>
 
 </body>
