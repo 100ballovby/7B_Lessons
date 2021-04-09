@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>HTML Формы. Основы</h1>
+<form action="https://echo.htmlacademy.ru/courses" method="post" target="_blank">
+    <!--
+     GET - получают инфоромацию от сервера
+     POST - отсылаете на сервер
+     -->
+    <fieldset>
+        <legend>Данные для входа</legend>
+        <!-- <input type="text">  обычное текстовое поле -->
+        <!--<input type="radio">   переключатель (для выбора одного из множества) -->
+        <!--<input type="submit">  кнопка для отправки чего-то -->
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" name="username" id="username" placeholder="username"><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" name="password" id="password" placeholder="password">
+    </fieldset>
+    <h4>Выберите пол:</h4>
+    <div>
+        <!-- RADIO buttons -->
+        <label for="1">
+            <input type="radio" name="gender" value="male" id="1" checked>Мужской</label>
+        <label for="2">
+            <input type="radio" name="gender" value="female" id="2">Женский</label>
+        <label for="3">
+            <input type="radio" name="gender" value="other" id="3">Другой</label>
+    </div>
+
+    <input type="submit" value="Отправить">
+
+
+</form>
+
+</body>
+</html>
