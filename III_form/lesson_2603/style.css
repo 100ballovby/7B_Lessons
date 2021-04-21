@@ -13,11 +13,68 @@ input[type="password"] {
     border: 1px solid;
     font-size: 18px;
     margin: 1em;
+    cursor: pointer; /* смена курсора */
 }
 
 input[type="submit"] {
-    border-color: #65ff61;
+    border-color: #237c21;
+    color: #237c21;
+    transition: all .75s;
 }
 input[type="reset"] {
     border-color: #ffd64a;
+    color: #ffd64a;
+    transition: all .75s;
+}
+
+input[type="submit"]:hover {
+    background: #237c21;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background: #ffd64a;
+    color: white;
+}
+.form {
+    width: 30%;
+    max-width: 500px;
+    min-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 0.3em solid;
+    border-image: linear-gradient(45deg, rgb(61, 44, 175), rgb(229, 80, 192)) 1;
+}
+
+.form-select {
+    width: 50%;
+    height: 40px;
+    background: #fff;
+    margin: 2em 0;
+}
+
+.form-select select {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 0.1em;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    color: #000;
+}
+
+input[type="date"],
+input[type="time"] {
+    appearance: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: 1px solid #ecf0f1;
+    border-radius: 0.3em;
+    background: #ecf0f1;
+    padding: 0.5em;
+    display: inline-block;
+    margin: 1em 0;
 }
