@@ -6,5 +6,8 @@ console.log(randInt);
 console.log(randIntInclude);
 
 function RandInt(min, max) {
-
+    return Math.floor(Math.random() * (max - min)) + min;
 }
+
+console.log(RandInt(10, 13))  // числа 10, 11, 12
+console.log(RandInt(50, 101)) // числа 50 - 100
