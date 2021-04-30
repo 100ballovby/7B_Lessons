@@ -1,4 +1,17 @@
-let arr_num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let arr_en = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-let arr_EN = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-let arr_symb = ['!', '@', '#', '$', '%', '?', '-', '+', '=', '~'];
+let square = document.getElementById('square'),
+    clickMe = document.getElementById('click');
+
+function clickBtn() {
+    let button = this;
+    square.style.backgroundColor = '#000000';
+    button.setAttribute('disabled', 'true');
+    setTimeout(clearAll, 2000, button);
+}
+
+function clearAll() {
+    let square = document.getElementById('square');
+    square.style.backgroundColor = 'transparent';
+    button.removeAttribute('disabled');
+}
+
+clickMe.onclick = clickBtn;

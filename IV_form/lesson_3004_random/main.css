@@ -1,0 +1,10 @@
+.square {
+    width: 20em;
+    height: 20em;
+    border: 2px solid gray;
+    margin: 1em;
+}
+
+#click {
+    padding: .5em 2em;
+}
