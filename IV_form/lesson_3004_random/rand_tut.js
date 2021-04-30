@@ -4,3 +4,7 @@ let randIntInclude = Math.floor(Math.random() * 10) + 1;
 // Случайное число от 0 до 10
 console.log(randInt);
 console.log(randIntInclude);
+
+function RandInt(min, max) {
+
+}
