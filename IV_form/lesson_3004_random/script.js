@@ -1,18 +1,16 @@
 let square = document.getElementById('square'),
-    clickMe = document.getElementById('click');
+    clickBlack = document.getElementById('clickBlack');
+    clickWhite = document.getElementById('clickWhite');
 
-function clickBtn() {
+function black() {
     let button = this;
     square.style.backgroundColor = '#000000';
-    button.setAttribute('disabled', 'true');
-    setTimeout(clearAll, 2000);
 }
 
-function clearAll() {
-    let button = clickMe;
-    let square = document.getElementById('square');
-    square.style.backgroundColor = 'transparent';
-    button.removeAttribute('disabled');
+function white() {
+    let button = this;
+    square.style.backgroundColor = '#ffffff';
 }
 
-clickMe.onclick = clickBtn;
+clickBlack.onclick = black;
+clickWhite.onclick = white;
