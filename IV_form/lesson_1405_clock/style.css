@@ -9,5 +9,12 @@ body {
     font-size: 4em;
     color: #4fff7b;
     text-align: center;
-    padding: 4em 0;
+}
+
+.date {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    color: #4fff7b;
+    padding-top: 2em;
+    text-align: center;
 }
