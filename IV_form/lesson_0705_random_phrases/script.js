@@ -54,4 +54,3 @@ function getPhrase() {
 
     document.getElementById('phrase').innerHTML = result
 }
-
