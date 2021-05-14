@@ -3,8 +3,11 @@ function currentTime() {
     let date = new Date();
     // дата берется из системы пользователя
     let hour = date.getHours();
+    hour = updateTime(hour);
     let min = date.getMinutes();
+    min = updateTime(min);
     let sec = date.getSeconds();
+    sec = updateTime(sec);
 
     midday = (hour >= 12) ? 'PM' : 'AM';
     hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour)
